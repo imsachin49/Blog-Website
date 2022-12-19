@@ -1,0 +1,240 @@
+.navbar{
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 39%, rgba(68,170,196,0.8295693277310925) 100%);
+}
+
+.navbar-nav{
+    display: flex;
+    margin: auto;
+    font-weight:bolder;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+
+.nav-link{
+    color:red;
+}
+
+.nav-item{
+    margin-left: 20px;
+}
+
+.nav-item:hover{
+    color: chocolate;
+}
+
+.nav-link:hover{
+    color:coral;
+    border-bottom: 1px solid red;
+}
+
+.btn a,.btn{
+    color: white;
+    text-decoration: none;
+}
+
+.btn a:hover,.btn:hover{
+    color: black;
+}
+
+/* .form-inline{
+    display: block;
+    float:inline-end;
+} */
+
+
+/* Auth styling */
+.form{
+    display: flex;
+    /* margin: auto; */
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form h1,.form p{
+    text-align: center;
+}
+
+.form input{
+    padding: 8px 70px;
+    margin: 10px;
+    font-weight: bold;
+    /* width:max-content; */
+}
+
+.my{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid grey; */
+    width: 450px;
+    padding-bottom: 30px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.form p a{
+    color: red;
+}
+
+.navbar-toggler-icon{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;   
+}
+
+.sub{
+    background-color: coral;
+    width: fit-content;
+    border: 1px solid chocolate;
+    border-radius: 20px;
+    display: flex;
+    margin:auto;
+    outline-color: coral;
+}
+
+.card{
+    display: flex;
+    /* margin: auto; */
+    width: 27rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    /* margin:10px 10px; */
+    border: 1px solid grey;
+}
+
+
+
+/* add blog */
+.frm{
+    border: 1px solid gray;
+    width: 900px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 4px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    /* margin-top: 40px; */
+}
+
+.frm input,.frm textarea{
+    padding: 10px;
+    width: 860px;
+    margin:10px 10px;
+    border-radius: 5px;
+    font-weight: bolder;
+    border-color: coral;
+    outline-color:green;
+}
+
+.whole{
+    background-color:limegreen;
+    background: radial-gradient(circle, rgba(32,204,139,0.9472163865546218) 7%, rgba(41,38,41,0.9500175070028011) 80%);
+    background: linear-gradient(90deg, rgba(32,204,139,0.9472163865546218) 7%, rgba(41,38,41,0.9500175070028011) 80%);
+
+    /* width: 100vh; */
+    height: 100vh;
+}
+
+.top{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+.top img{
+    /* margin-left: 50px; */
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#edit{
+    padding:0px 15px;
+}
+
+.navbar-nav{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.active{
+    border-bottom: 2px solid red;
+}
+
+
+
+.hi{
+    color: aquamarine;
+    font-weight: bolder;
+    font-size: 30px;
+    display: flex;
+    margin: auto;
+    padding:0px 20px ;
+}
+
+.allC{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 10px;
+} 
+
+
+@media only screen and (max-width: 900px) {
+    /* body{
+        background-color:rgb(141, 115, 115);
+    } */
+    .card{
+        width:100%;
+        margin-left: -5px;
+    }
+    .allC{
+        grid-template-columns:1fr;
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width:750px) and (max-width: 1150px) {
+    /* body{
+        background-color: powderblue;
+    } */
+    .card{
+        width:100%;
+    }
+    .allC{
+        grid-template-columns:1fr 1fr;
+        justify-content: center;
+    }
+} 
+
+
+
+@media only screen and (min-width:1151px) {
+    /* body{
+        background-color: powderblue;
+    } */
+    .card{
+        width:100%;
+    }
+    .allC{
+        grid-template-columns:1fr 1fr 1fr;
+        justify-content: center;
+        margin: 20px;
+    }
+} 
+
+@media screen and (max-width:900px) {
+    .frm input,.frm textarea,.frm{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:475px) {
+    .form,.form h1 ,.form p,.form input,.my{
+        width: 95%;
+    }
+  
+}
